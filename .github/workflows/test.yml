@@ -1,0 +1,23 @@
+# Comment here
+name: GitHub Automation
+
+on:
+  release:
+    types:
+     - created
+  push:
+    branches:
+      - main
+     
+
+jobs:
+  automation:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Display on Screen
+       run: echo Hello World
+       
+     - name: Multiple Commands
+       run: | 
+        echo Hi
+        echo Byee
